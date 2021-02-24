@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "baseUrl": "./",
+    "checkJs": false,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    // "extendedDiagnostics": true,
+    "forceConsistentCasingInFileNames": true,
+    // "importHelpers": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2015",
+      "ES2016.Array.Include",
+      "ES2017.Object"
+    ],
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noUnusedParameters": true,
+    "outDir": "./dist",
+    "paths": {
+      "@build/*": ["build/*"],
+      "@src/*": ["src/*"],
+      "@test/*": ["test/*"],
+      "@root/*": ["*"]
+    },
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "rootDir": "./",
+    "pretty": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictPropertyInitialization": true,
+    "target": "ESNext",
+    "typeRoots": ["./node_modules/@types", "./src/types"]
+  },
+  "exclude": ["build/templates/**/*", "node_modules"],
+  "include": ["**/*"]
+}

@@ -1,0 +1,12 @@
+.btn {
+  background: theme('colors.green.300');
+  border-radius: theme('spacing.1');
+  font-weight: theme('fontWeight.medium');
+  padding: theme('spacing.2');
+  margin-top: theme('spacing.5');
+  min-width: theme('spacing.48');
+}
+
+.btn.disabled {
+  background: theme('colors.gray.300');
+}
