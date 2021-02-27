@@ -1,12 +1,19 @@
 # TruckMap Chat
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptatem assumenda neque cum quis asperiores reprehenderit magni delectus accusamus, voluptate quasi deserunt sit nesciunt dolores nostrum. Accusamus maxime veritatis totam?
+I've got tons of ideas on how this would/could improve but time is valuable. However, it was fun and haven't really used NextJS too much but it's great for the quick and small projects. It had been **years** since having played with **SocketIO** so that was entertaining 🎉. All in all, good code challenge.
+
+I didn't complete the `link preview` feature you noted. However. I did start the API endpoint for scraping the info which you can see at the link below, it's not perfect but a great start.
+
+- [Scrapper link](http://localhost:3000/api/scrapper?url=https://www.mattscholta.com/)
+
+**Resources & Tech:**
 
 - [TruckMap Challenge](https://github.com/TruckMap/ChallengeJS)
+- [Create NextJS App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
+- [Socket Repo](https://github.com/rickyplouis/socket-next-starter)
 - [socket.io](https://socket.io/get-started/chat)
 - [JSDOM](https://github.com/jsdom/jsdom)
 - [TailwindCSS](https://tailwindcss.com/docs)
-- https://github.com/rickyplouis/socket-next-starter/blob/master/pages/rooms.js
 
 ## Installation + Setup
 
