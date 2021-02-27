@@ -28,7 +28,7 @@ const ChatUserList: React.FC<ChatUserListProps> = (props) => {
   const renderUser = (email: string) => {
     const isMatch = email === user.email;
     const classesUser = classnames('border-b px-4 py-2 text-sm', {
-      'bg-blue-300': isMatch
+      'bg-green-300': isMatch
     });
 
     return (
