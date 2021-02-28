@@ -16,7 +16,7 @@ import { userAtom } from '@root/atoms/user';
  */
 const Chat: React.FC = (_props) => {
   // Hooks
-  const { loggedIn } = useRecoilValue(userAtom);
+  const { visitor } = useRecoilValue(userAtom);
 
   return (
     <div className="flex flex-1 flex-col items-center justify-center">
@@ -27,8 +27,8 @@ const Chat: React.FC = (_props) => {
 
       <main className="flex flex-col">
         <h1 className="text-3xl font-bold">💬 Chat</h1>
-        {loggedIn && <ChatRoom className="flex flex-col flex-1" />}
-        {!loggedIn && <FormLogin />}
+        {!visitor && <ChatRoom className="flex flex-col flex-1" />}
+        {visitor && <FormLogin />}
       </main>
     </div>
   );

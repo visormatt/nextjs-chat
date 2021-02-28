@@ -29,8 +29,8 @@ const FormLogin = function () {
 
     setState(() => ({
       email: inputEmail.value,
-      loggedIn: true,
-      name: inputName.value
+      name: inputName.value,
+      visitor: false
     }));
   };
 
