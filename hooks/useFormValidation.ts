@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
  */
 const useFormValidation = (
   formRef: React.RefObject<HTMLFormElement>,
-  dependencies: any[]
+  dependencies: unknown[]
 ) => {
   // Hooks
   const [valid, setValid] = useState(false);
