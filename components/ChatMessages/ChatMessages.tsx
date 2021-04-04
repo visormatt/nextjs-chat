@@ -30,7 +30,10 @@ const ChatMessages: React.FC<ChatMessagesProps> = (props) => {
   // Markup
   const renderMessage = (data: Message, index: number) => {
     const prevMessage = messages[index - 1];
-    const showAuthor = prevMessage && prevMessage.email !== data.email;
+
+    const isFirst = index === 0;
+    const isNewAuthor = prevMessage && prevMessage.email !== data.email;
+    const showAuthor = isFirst || isNewAuthor;
 
     return (
       <ChatMessage author={showAuthor} data={data} key={`message-${index}`} />

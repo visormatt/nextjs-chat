@@ -17,7 +17,7 @@ const Container: React.FC<ContainerProps> = (_props) => {
   const router = useRouter();
 
   // Setup
-  const { loggedIn } = state;
+  const { visitor } = state;
 
   // Handlers
   const onClickLogout = () => {
@@ -25,7 +25,7 @@ const Container: React.FC<ContainerProps> = (_props) => {
     router.push('/');
   };
 
-  return <Navigation loggedIn={loggedIn} onClickLogout={onClickLogout} />;
+  return <Navigation onClickLogout={onClickLogout} visitor={visitor} />;
 };
 
 export { Container, Container as default };

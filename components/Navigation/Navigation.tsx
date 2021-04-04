@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export interface NavigationProps {
-  loggedIn: boolean;
   onClickLogout: () => void;
+  visitor: boolean;
 }
 
 /**
@@ -10,7 +10,7 @@ export interface NavigationProps {
  * @description Very simple navigation bar we want across the application
  */
 const Navigation: React.FC<NavigationProps> = (props) => {
-  const { loggedIn, onClickLogout } = props;
+  const { onClickLogout, visitor } = props;
 
   // Markup
   const renderLogout = () => (
@@ -29,7 +29,7 @@ const Navigation: React.FC<NavigationProps> = (props) => {
         <a className="p-2">Chat</a>
       </Link>
 
-      {loggedIn && renderLogout()}
+      {!visitor && renderLogout()}
     </nav>
   );
 };

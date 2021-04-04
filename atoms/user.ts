@@ -5,7 +5,7 @@ import { atom } from 'recoil';
 import { User } from '@root/types';
 
 export const userDefault: User = {
-  loggedIn: false
+  visitor: true
 };
 
 export const userAtom = atom<User>({

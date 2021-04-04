@@ -6,8 +6,8 @@ export interface Message {
 
 export interface User {
   email?: string;
-  loggedIn: boolean;
   name?: string;
+  visitor: boolean;
 }
 
 export enum SocketEvents {
