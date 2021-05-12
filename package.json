@@ -15,7 +15,7 @@
     "jsdom": "^16.4.0",
     "next": "latest",
     "node-dev": "^6.3.0",
-    "postcss": "^8.1.10",
+    "postcss": "^8.2.10",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "recoil": "^0.1.2",
